@@ -58,7 +58,7 @@ int main(void)
 
     while (1)
     {
-        UART_SendString("HELLO\r\n");
+        UART_SendString("London is Blue\r\n");
 
         for (int i = 0; i < 1000000; i++); // crude delay
     }
