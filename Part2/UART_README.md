@@ -1,3 +1,4 @@
+## UART Communication
 **What UART is and where it is used ?**
 
 UART is a method used to send data one bit at a time from one device to another. It is used in laptop to/from microcontroller.
@@ -27,5 +28,5 @@ We want a Baud Rate of 9600, so we take a USARTDIV of  (16x10^6/9600)=1667 or 0x
 
  **Steps involved in transmitting data?**
 
-Steps involved
+Using UART for transmitting data involves first enabling the required clocks for the GPIO and UART. Then, the TX pin is configured to operate in UART mode instead of normal GPIO mode. The baud rate is set so both devices communicate at the same speed, and the UART along with its transmitter is enabled. Whenever data needs to be sent, the program waits until the UART is ready, writes the data to it, and the hardware automatically transmits it one bit at a time.
 
