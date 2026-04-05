@@ -23,7 +23,7 @@ Registers used for UART configuration are  USART_CR1( Control register), USART_B
 
 Baud Rate = Clock Frequency / USARTDIV
 
-We want a Baud Rate of 9600, so we take a USARTDIV of  (16x106/9600)=1667 or 0x0683
+We want a Baud Rate of 9600, so we take a USARTDIV of  (16x10^6/9600)=1667 or 0x0683
 
  **Steps involved in transmitting data?**
 
