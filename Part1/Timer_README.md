@@ -24,7 +24,7 @@ Prescaler (PSC) value and why it was chosen?
 
 Prescaler Value: 15999
 
-The clock speed of STM32 is 16MHz. So, if we want to count each ms , we have to count each 16x106/1000=16000. So, we have to take prescaler: (16000-1) =15999. Basically, it’s like count the next term after ignoring the prescaler number of numbers.
+The clock speed of STM32 is 16MHz. So, if we want to count each ms , we have to count each 16x10^6/1000=16000. So, we have to take prescaler: (16000-1) =15999. Basically, it’s like count the next term after ignoring the prescaler number of numbers.
 
  Auto-reload register (ARR) value calculation?
 
